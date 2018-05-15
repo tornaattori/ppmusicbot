@@ -9,3 +9,9 @@ module.exports = robot => {
     msg.send('Markku is!');
   });
 };
+
+module.exports = robot => {
+  robot.hear(/yeaa bot/i, msg => {
+    msg.send('HELL YEA!');
+  });
+};
