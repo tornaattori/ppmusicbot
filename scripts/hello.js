@@ -15,3 +15,9 @@ module.exports = robot => {
     msg.send('HELL YEA!');
   });
 };
+
+module.exports = robot => {
+  robot.hear(/mämmi/i, msg => {
+    msg.send('mömmö');
+  });
+};
