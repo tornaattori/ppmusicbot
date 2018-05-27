@@ -22,7 +22,7 @@ module.exports = (robot) => {
       process.env.SPOTIFY_PLAYLIST_ID,
       [`spotify:track:${trackId}`]
     )
-      .then(() => msg.send(`Track added to playlist! ${randomNiceEmoji()}`))
+      //.then(() => msg.send(`Track added to playlist! ${randomNiceEmoji()}`))
       .catch((err) => {
         console.log('Error adding track to playlist: ', err);
         msg.send(`Failed to add track to playlist 😓  "${err.message}"`);
