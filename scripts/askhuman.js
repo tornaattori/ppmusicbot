@@ -22,7 +22,7 @@ function handleConfirmAddToPlaylist(answer, job, msg) {
       [`spotify:track:${job.meta.trackId}`]
     ))
       .then(() => {
-        msg.send(`Track added to playlist! ${randomNiceEmoji()}`);
+        // msg.send(`Track added to playlist! ${randomNiceEmoji()}`);
         return true;
       })
       .catch((err) => {
